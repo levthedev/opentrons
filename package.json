@@ -1,0 +1,17 @@
+{
+  "name": "opentrons",
+  "version": "1.0.0",
+  "description": "splash page for OpenTrons",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Lev Kravinsky",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "engines": {
+    "node": "0.12.3"
+  }
+}
