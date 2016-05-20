@@ -1,0 +1,93 @@
+body {
+  margin: 0px;
+  background: #000;
+  color: white;
+}
+
+.header-cont {
+  width: 97%;
+  position: fixed;
+  top: 0px;
+  margin: 2rem;
+  font-family: 'geogrotesque_ultralighultraLt';
+  font-size: 1.5rem;
+}
+
+.header-right a {
+  float: right;
+  color: white;
+  margin-right: 3rem;
+  margin-top: .75rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#title {
+  margin-left: 1.5rem;
+  font-family: "geogrotesque_regularregular";
+}
+
+#logo {
+  vertical-align: middle;
+  width: 3rem;
+}
+
+.panel {
+  height: 100vh;
+  width: 100vw;
+}
+
+.main-title {
+  text-align: center;
+  margin-top: 34vh;
+}
+
+#big-logo {
+  border: .1rem solid white;
+  height: 15rem;
+}
+
+.panel-2 {
+  font-size: 1.2rem;
+  font-family: 'geogrotesque_ultralighultraLt', Helvetica;';
+  text-align: left;
+}
+
+.panel-2-left {
+  width: 45%;
+  float: left;
+  padding-left: 8vw;
+  list-style: none;
+  text-align: left;
+}
+
+.panel-2-left a {
+  color: white;
+  cursor: pointer;
+}
+
+.panel-2-left a:visited {
+  color: white;
+}
+
+
+
+#ot-one-pic {
+  margin-top: -2rem;
+  width: 38%;
+  float: right;
+  padding-right: 2vw;
+}
+
+.panel-3 {
+  background-color: blue;
+}
+
+#bold {
+  font-family: 'geogrotesque_regularregular', Helvetica;';
+}
+
+#box {
+  margin-top: 16vh;
+}

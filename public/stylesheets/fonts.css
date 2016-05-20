@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'geogrotesque_regularregular';
+    src: url('../fonts/Geogtq-Rg-webfont.eot');
+    src: url('../fonts/Geogtq-Rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Geogtq-Rg-webfont.woff2') format('woff2'),
+         url('../fonts/Geogtq-Rg-webfont.woff') format('woff'),
+         url('../fonts/Geogtq-Rg-webfont.ttf') format('truetype'),
+         url('../fonts/Geogtq-Rg-webfont.svg#geogrotesque_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'geogrotesque_semiboldsemibold';
+    src: url('../fonts/Geogtq-Sb-webfont.eot');
+    src: url('../fonts/Geogtq-Sb-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Geogtq-Sb-webfont.woff2') format('woff2'),
+         url('../fonts/Geogtq-Sb-webfont.woff') format('woff'),
+         url('../fonts/Geogtq-Sb-webfont.ttf') format('truetype'),
+         url('../fonts/Geogtq-Sb-webfont.svg#geogrotesque_semiboldsemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'geogrotesque_ultralighultraLt';
+    src: url('../fonts/Geogtq-Ul-webfont.eot');
+    src: url('../fonts/Geogtq-Ul-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Geogtq-Ul-webfont.woff2') format('woff2'),
+         url('../fonts/Geogtq-Ul-webfont.woff') format('woff'),
+         url('../fonts/Geogtq-Ul-webfont.ttf') format('truetype'),
+         url('../fonts/Geogtq-Ul-webfont.svg#geogrotesque_ultralighultraLt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
