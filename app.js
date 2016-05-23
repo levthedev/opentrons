@@ -5,7 +5,7 @@ var favicon = require('serve-favicon');
 var env = process.env.NODE_ENV || 'development';
 
 app.use(express.static('public'));
-app.use(favicon(path.join(__dirname,'public','images','favicon.ico')));
+app.use(favicon(path.join(__dirname,'public','img','favicon.ico')));
 
 app.get('*', function (req, res, next) {
   if (req.headers['x-forwarded-proto'] != 'https' && env != "development")

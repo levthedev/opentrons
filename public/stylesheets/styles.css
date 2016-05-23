@@ -2,6 +2,8 @@ body {
   margin: 0px;
   background: #000;
   color: white;
+  font-family: 'geogrotesque_ultralighultraLt';
+  -webkit-font-smoothing: antialiased;
 }
 
 .header-cont {
@@ -9,7 +11,6 @@ body {
   position: fixed;
   top: 0px;
   margin: 2rem;
-  font-family: 'geogrotesque_ultralighultraLt';
   font-size: 1.5rem;
 }
 
@@ -17,25 +18,27 @@ body {
   float: right;
   color: white;
   margin-right: 3rem;
-  margin-top: .75rem;
+  margin-top: 1rem;
   font-size: 1.2rem;
   text-decoration: none;
-  display: inline-block;
 }
 
 #title {
-  margin-left: 1.5rem;
-  font-family: "geogrotesque_regularregular";
+  vertical-align: middle;
+  margin-left: 1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 
 #logo {
   vertical-align: middle;
-  width: 3rem;
+  width: 3.2rem;
 }
 
 .panel {
   height: 100vh;
   width: 100vw;
+  display: inline-block;
 }
 
 .main-title {
@@ -45,13 +48,8 @@ body {
 
 #big-logo {
   border: .1rem solid white;
-  height: 15rem;
-}
-
-.panel-2 {
-  font-size: 1.2rem;
-  font-family: 'geogrotesque_ultralighultraLt', Helvetica;';
-  text-align: left;
+  padding: 1.2rem;
+  height: 14rem;
 }
 
 .panel-2-left {
@@ -60,6 +58,7 @@ body {
   padding-left: 8vw;
   list-style: none;
   text-align: left;
+  font-size: 1.2rem;
 }
 
 .panel-2-left a {
@@ -80,14 +79,142 @@ body {
   padding-right: 2vw;
 }
 
-.panel-3 {
-  background-color: blue;
+.grid {
+  background-image: url("/img/grid.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#bold {
-  font-family: 'geogrotesque_regularregular', Helvetica;';
+.bold {
+  font-family: 'geogrotesque_regularregular', Helvetica;
 }
 
 #box {
   margin-top: 16vh;
+}
+
+#sketchfab {
+  margin-top: 4rem;
+  padding: 2rem;
+  width: 64vw;
+}
+
+#panel-3-right {
+  margin-top: 25vh;
+  margin-right: 1.75rem;
+  float: right;
+  text-align: right;
+  font-size: 2rem;
+}
+
+.button {
+  margin-top: 1.5rem;
+  padding: .5rem .75rem .5rem .75rem;
+  background-color: #fff;
+  color: #0f3ffb;
+  border: 0;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 200;
+  font-family: "geogrotesque_regularregular";
+}
+
+#ot-one {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+#price {
+  margin-top: 0rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.panel-4 {
+  text-align: left;
+  font-size: 2.5rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("/img/MixBio-Video.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#panel-4-text {
+  display: inline-block;
+  vertical-align: middle;
+  width: 33vw;
+  margin-left: 2rem;
+  margin-top: 20vh;
+  margin-bottom: .5rem;
+  font-weight: 600;
+}
+
+#panel-4-text #mix-bio {
+  display: block;
+  margin-bottom: 0.33rem;
+}
+
+#panel-4-text .button {
+  margin-top: 4rem;
+}
+
+#protocols {
+  margin-bottom: 1.5rem;
+}
+
+.panel-5 {
+  font-size: 3rem;
+  height: 130vh;
+}
+
+.quarter-panel {
+  vertical-align: middle
+  height: 25vh;
+  margin: 2rem;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+hr {
+  float: middle;
+  width: 90vw;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.vertical-center {
+  vertical-align: middle;
+}
+
+.social-media {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  padding: 1.5rem;
+  font-size: 3.2rem;
+}
+
+.footer-logo {
+  height: 3rem;
+}
+
+a img {
+  border: 0 none;
+}
+
+.image-link {
+  text-decoration: none;
+}
+
+.bottom-margin {
+  margin-top: 0rem;
+  margin-bottom: 1rem;
 }
