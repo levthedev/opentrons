@@ -23,33 +23,10 @@ body {
   text-decoration: none;
 }
 
-#title {
-  vertical-align: middle;
-  margin-left: 1rem;
-  font-size: 1.6rem;
-  font-weight: 600;
-}
-
-#logo {
-  vertical-align: middle;
-  width: 3.2rem;
-}
-
 .panel {
   height: 100vh;
   width: 100vw;
   display: inline-block;
-}
-
-.main-title {
-  text-align: center;
-  margin-top: 34vh;
-}
-
-#big-logo {
-  border: .1rem solid white;
-  padding: 1.2rem;
-  height: 14rem;
 }
 
 .panel-2-left {
@@ -70,13 +47,45 @@ body {
   color: white;
 }
 
-
-
-#ot-one-pic {
-  margin-top: -2rem;
-  width: 38%;
+.panel-3-right {
+  margin-top: 25vh;
+  margin-right: 1.75rem;
   float: right;
-  padding-right: 2vw;
+  text-align: right;
+  font-size: 2rem;
+}
+
+.panel-4 {
+  text-align: left;
+  font-size: 2.5rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("/img/MixBio-Video.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.panel-4-text {
+  display: inline-block;
+  vertical-align: middle;
+  width: 33vw;
+  margin-left: 2rem;
+  margin-top: 20vh;
+  margin-bottom: .5rem;
+  font-weight: 600;
+}
+
+.panel-4-text #mix-bio {
+  display: block;
+  margin-bottom: 0.33rem;
+}
+
+.panel-4-text .button {
+  margin-top: 4rem;
+}
+
+.main-title {
+  text-align: center;
+  margin-top: 34vh;
 }
 
 .grid {
@@ -84,28 +93,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.bold {
-  font-family: 'geogrotesque_regularregular', Helvetica;
-}
-
-#box {
-  margin-top: 16vh;
-}
-
-#sketchfab {
-  margin-top: 4rem;
-  padding: 2rem;
-  width: 64vw;
-}
-
-#panel-3-right {
-  margin-top: 25vh;
-  margin-right: 1.75rem;
-  float: right;
-  text-align: right;
-  font-size: 2rem;
 }
 
 .button {
@@ -120,47 +107,8 @@ body {
   font-family: "geogrotesque_regularregular";
 }
 
-#ot-one {
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-}
-
-#price {
-  margin-top: 0rem;
-  font-size: 2.4rem;
-  font-weight: 600;
-}
-
-.panel-4 {
-  text-align: left;
-  font-size: 2.5rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("/img/MixBio-Video.gif");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#panel-4-text {
-  display: inline-block;
-  vertical-align: middle;
-  width: 33vw;
-  margin-left: 2rem;
-  margin-top: 20vh;
-  margin-bottom: .5rem;
-  font-weight: 600;
-}
-
-#panel-4-text #mix-bio {
-  display: block;
-  margin-bottom: 0.33rem;
-}
-
-#panel-4-text .button {
-  margin-top: 4rem;
-}
-
-#protocols {
-  margin-bottom: 1.5rem;
+.bold {
+  font-family: 'geogrotesque_regularregular', Helvetica;
 }
 
 .panel-5 {
@@ -182,13 +130,6 @@ body {
   float: right;
 }
 
-hr {
-  float: middle;
-  width: 90vw;
-  text-align: center;
-  margin-bottom: 0;
-}
-
 .vertical-center {
   vertical-align: middle;
 }
@@ -206,10 +147,6 @@ hr {
   height: 3rem;
 }
 
-a img {
-  border: 0 none;
-}
-
 .image-link {
   text-decoration: none;
 }
@@ -217,4 +154,65 @@ a img {
 .bottom-margin {
   margin-top: 0rem;
   margin-bottom: 1rem;
+}
+
+a img {
+  border: 0 none;
+}
+
+hr {
+  float: middle;
+  width: 90vw;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#big-logo {
+  border: .1rem solid white;
+  padding: 1.2rem;
+  height: 14rem;
+}
+
+#ot-one-pic {
+  margin-top: -2rem;
+  width: 38%;
+  float: right;
+  padding-right: 2vw;
+}
+
+#box {
+  margin-top: 16vh;
+}
+
+#sketchfab {
+  margin-top: 4rem;
+  padding: 2rem;
+  width: 64vw;
+}
+
+#ot-one {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+#price {
+  margin-top: 0rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+#protocols {
+  margin-bottom: 1.5rem;
+}
+
+#title {
+  vertical-align: middle;
+  margin-left: 1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+#logo {
+  vertical-align: middle;
+  width: 3.2rem;
 }
