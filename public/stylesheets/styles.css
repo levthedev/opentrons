@@ -20,6 +20,7 @@ body {
   margin-right: 3rem;
   margin-top: 1rem;
   font-size: 1.2rem;
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -27,6 +28,13 @@ body {
   height: 100vh;
   width: 100vw;
   display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel-2 {
+  margin-top: 16vh;
 }
 
 .panel-2-left {
@@ -36,6 +44,7 @@ body {
   list-style: none;
   text-align: left;
   font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .panel-2-left a {
@@ -48,8 +57,7 @@ body {
 }
 
 .panel-3-right {
-  margin-top: 25vh;
-  margin-right: 1.75rem;
+  margin-left: 7vw;
   float: right;
   text-align: right;
   font-size: 2rem;
@@ -62,15 +70,15 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  justify-content: flex-start;;
 }
 
 .panel-4-text {
   display: inline-block;
   vertical-align: middle;
-  width: 33vw;
-  margin-left: 2rem;
-  margin-top: 20vh;
-  margin-bottom: .5rem;
+  width: 20vw;
+  margin-left: 18vw;
+  margin-right: 10rem;
   font-weight: 600;
 }
 
@@ -83,9 +91,16 @@ body {
   margin-top: 4rem;
 }
 
+.panel-5 {
+  font-size: 3.5rem;
+  height: 115vh;
+  flex-direction: column;
+  width: 66vw;
+  margin-left: 16.6vw;
+}
+
 .main-title {
   text-align: center;
-  margin-top: 34vh;
 }
 
 .grid {
@@ -111,11 +126,6 @@ body {
   font-family: 'geogrotesque_regularregular', Helvetica;
 }
 
-.panel-5 {
-  font-size: 3rem;
-  height: 130vh;
-}
-
 .quarter-panel {
   vertical-align: middle
   height: 25vh;
@@ -123,11 +133,11 @@ body {
 }
 
 .left {
-  float: left;
+  align-self: flex-start;
 }
 
 .right {
-  float: right;
+  align-self: flex-end;
 }
 
 .vertical-center {
@@ -162,9 +172,9 @@ a img {
 
 hr {
   float: middle;
-  width: 90vw;
+  width: 60vw;
   text-align: center;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 #big-logo {
@@ -180,14 +190,11 @@ hr {
   padding-right: 2vw;
 }
 
-#box {
-  margin-top: 16vh;
-}
-
 #sketchfab {
   margin-top: 4rem;
   padding: 2rem;
   width: 64vw;
+  max-width: 800px
 }
 
 #ot-one {
