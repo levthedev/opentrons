@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>OpenTrons</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.11.2/mapbox-gl.css" rel='stylesheet' />
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.11.2/mapbox-gl.js"></script>
     <script src="./javascripts/client.js"></script>
     <link rel="stylesheet" href="/stylesheets/fonts.css">
     <link rel="stylesheet" href="/stylesheets/styles.css">
@@ -19,6 +24,10 @@
     </div>
 
     <div class="panel panel-1">
+      <video autoplay loop id="ot-vid">
+        
+      </video>
+
       <div class="main-title">
         <img id="big-logo" src="./img/logo-white-no-glow.png">
       </div>
@@ -86,7 +95,16 @@
         </span>
       </div>
     </div>
-    
+
+    <div class="customers">
+      <img src="./img/logo_stanford.png">
+      <img src="./img/logo_isomerase.png">
+      <img src="./img/logo_genspace.png">
+    </div>
+
+    <div id="map"></div>
+    <script src="./javascripts/leaflet-mapbox-gl.js"></script>
+
     <div class="social-media">
       <a class="image-link" href="https://twitter.com/OpenTrons_">
         <img class="footer-logo" src="./img/twitter.png">

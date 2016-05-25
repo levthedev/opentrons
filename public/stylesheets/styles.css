@@ -27,10 +27,19 @@ body {
 .panel {
   height: 100vh;
   width: 100vw;
-  display: inline-block;
+  display: -webkit-flex;
+  display: -ms-flex;
   display: flex;
+  -webkit-align-items: center;
+  -ms-align-items: center;
   align-items: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
+}
+
+.panel-1 {
+  background-image: url('/img/opentrons.mp4')
 }
 
 .panel-2 {
@@ -70,15 +79,17 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  justify-content: flex-start;;
+  -webkit-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .panel-4-text {
   display: inline-block;
   vertical-align: middle;
-  width: 20vw;
-  margin-left: 18vw;
-  margin-right: 10rem;
+  width: 33vw;
+  /*max-width: something;*/
+  margin-left: 10vw;
   font-weight: 600;
 }
 
@@ -92,11 +103,14 @@ body {
 }
 
 .panel-5 {
-  font-size: 3.5rem;
-  height: 115vh;
+  font-size: 3rem;
+  height: 125vh;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
-  width: 66vw;
-  margin-left: 16.6vw;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
 }
 
 .main-title {
@@ -127,17 +141,24 @@ body {
 }
 
 .quarter-panel {
-  vertical-align: middle
+  vertical-align: middle;
+  align-self: center;
   height: 25vh;
-  margin: 2rem;
+  margin: 1.5rem;
 }
 
 .left {
+  -webkit-align-self: flex-start;
+  -ms-align-self: flex-start;
   align-self: flex-start;
+  margin-left: 10vw;
 }
 
 .right {
+  -webkit-align-self: flex-end;
+  -ms-align-self: flex-end;
   align-self: flex-end;
+  margin-right: 10vw
 }
 
 .vertical-center {
@@ -166,14 +187,30 @@ body {
   margin-bottom: 1rem;
 }
 
+.customers {
+  height: 15vh;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+
+.customers img {
+  height: 2.5rem;
+  text-align: center;
+  margin: 3rem;
+}
+
 a img {
   border: 0 none;
 }
 
 hr {
-  float: middle;
-  width: 60vw;
-  text-align: center;
+  /*float: middle;*/
+  width: 85vw;
+  /*text-align: center;*/
   margin: 0;
 }
 
@@ -191,8 +228,7 @@ hr {
 }
 
 #sketchfab {
-  margin-top: 4rem;
-  padding: 2rem;
+    padding: 2rem;
   width: 64vw;
   max-width: 800px
 }
@@ -222,4 +258,20 @@ hr {
 #logo {
   vertical-align: middle;
   width: 3.2rem;
+}
+
+#ot-vid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: 110vw;
+  height: 110vh;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
 }

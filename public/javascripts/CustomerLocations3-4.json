@@ -1,0 +1,634 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-79.3711358, 43.6512121]
+        },
+        "properties": {
+            "Robots": "2",
+            "Location": "Toronto, Canada"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [8.2692343, 49.9877007]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Mainz, Germany"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-71.05888, 42.3505036]
+        },
+        "properties": {
+            "Robots": "3",
+            "Location": "Boston, MA"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-121.955236, 37.354108]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Santa Clara, CA"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-122.989827, 45.522894]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Hillsborow, Oregon"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [114.2056539, 22.4215193]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Hong Kong"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-76.531985, 3.451647]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Cali, Colombia"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [3.3553508, 50.4974431]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Denville, NJ"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-122.1187689, 37.4081655]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Stanford, CA"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-71.05888, 42.360082]
+        },
+        "properties": {
+            "Robots": "2",
+            "Location": "Boston, Massachusets "
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-80.128932, 26.368306]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Boca Raton, FL"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-81.515754, 27.664827]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Florida"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-73.86543, 40.837049]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Bronx, NY"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-75.165222, 39.952584]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Philidelphia, Pennsylvania "
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-71.1064458, 42.3390187]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Boston, Massachusets "
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-122.332071, 47.606209]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Seattle, WA"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-0.127758, 51.507351]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "London, UK"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-122.4110782, 37.7817183]
+        },
+        "properties": {
+            "Robots": "2",
+            "Location": "San Francisco, CA"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [0.2335564, 52.0561879]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Cambridge, UK"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-122.4098977, 37.7771682]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "San Francisco, CA"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-77.20137, 39.143441]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Gaithersburg, MD"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-85.323214, 51.253775]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Ontario, Canada"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-73.944158, 40.678178]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Brooklyn, NY"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-74.005941, 40.712784]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "NYC, NY"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-82.530653, 27.336435]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Sarasota, Florida"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [115.8351524, -31.9546152]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Perth, Australia"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-73.212072, 44.475882]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Burlington, Vermont"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-69.931212, 18.486058]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Santo Domingo, Dominican Republic"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-122.272747, 37.871593]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Berkeley, California"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [19.040235, 47.497912]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Budapest, Hungary"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [151.20699, -33.867487]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Sydney, Australia"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-122.176345, 37.4312502]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Stanford, CA"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-73.140943, 40.925654]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Stony Brook, nY"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-123.086754, 44.052069]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Eugene, OR"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [18.008433, 59.368879]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Solna, Sweden"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-79.383184, 43.653226]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Toronto, Canada "
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-0.1359087, 51.532547]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "London, UK"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-123.0743126, 42.4385888]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Gold Hill, OR"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-4.2903892, 55.8721241]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Glasgow, Scotland"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [114.1348961, 22.2830038]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Hong Kong"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-1.5636591, 52.3792558]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Coventry, UK"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-76.612189, 39.290385]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Baltimore, Maryland "
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-122.3057086, 47.6553351]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Seattle, WA"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-76.6293299, 39.322112]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Baltimore, Maryland "
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-117.2251658, 32.8787599]
+        },
+        "properties": {
+            "Robots": "",
+            "Location": "San Diego, California"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [139.5699595, 37.76477835]
+        },
+        "properties": {
+            "Robots": "",
+            "Location": "Tokyo, Japan"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [141.3002884, 43.0594285]
+        },
+        "properties": {
+            "Robots": "1",
+            "Location": "Chaska Minnesota "
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [136.1561334, 31.9069375]
+        },
+        "properties": {
+            "Robots": "",
+            "Location": "San Jose, CA"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [140.474728, 37.760834]
+        },
+        "properties": {
+            "Robots": "",
+            "Location": "Fukushima"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-71.109734, 42.373616]
+        },
+        "properties": {
+            "Robots": "",
+            "Location": "Cambridge, Massachusets "
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-122.3057086, 47.6553351]
+        },
+        "properties": {
+            "Robots": "",
+            "Location": "Seattle, WA"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-117.2362075, 32.8800604]
+        },
+        "properties": {
+            "Robots": "",
+            "Location": "San Diego, CA"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-76.6315239, 39.322112]
+        },
+        "properties": {
+            "Robots": "",
+            "Location": "Baltimore, MD"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [11.581981, 48.135125]
+        },
+        "properties": {
+            "Robots": "",
+            "Location": "München, Germany"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-117.689218, 33.646966]
+        },
+        "properties": {
+            "Robots": "",
+            "Location": "Lake Forest, CA"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-80.18728, 40.26257]
+        },
+        "properties": {
+            "Robots": "",
+            "Location": "Canonsburg PA"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-86.9233833, 40.4237054]
+        },
+        "properties": {
+            "Robots": "",
+            "Location": "West Lafayette, IN"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-123.2481879, 49.2606052]
+        },
+        "properties": {
+            "Robots": "",
+            "Location": "Vancouver, British Colombia"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [25.279651, 54.687156]
+        },
+        "properties": {
+            "Robots": "",
+            "Location": "Vilnius, Lithuania"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-122.3919091, 37.6643156]
+        },
+        "properties": {
+            "Robots": "",
+            "Location": "San Francisco, CA"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-73.9647667, 40.8075355]
+        },
+        "properties": {
+            "Robots": "",
+            "Location": "NYC, NY"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [2.352222, 48.856614]
+        },
+        "properties": {
+            "Robots": "",
+            "Location": "Paris, France"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-92.480199, 44.012122]
+        },
+        "properties": {
+            "Robots": "",
+            "Location": "Rochester, Minnesota"
+        }
+    }]
+}
