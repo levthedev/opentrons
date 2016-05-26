@@ -34,7 +34,7 @@ $(document).ready(function() {
           $button.prop("disabled",false);
           $('.msg-prompt').hide();
           $('.msg-success').removeClass('hide');
-          $('.form-fields').hide();
+          $('.contact-info').hide();
         },
         error: function () {
           $button.val(old_val);

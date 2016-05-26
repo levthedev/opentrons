@@ -17,6 +17,10 @@ body {
   z-index: 100;
 }
 
+.header-cont a {
+  cursor: pointer;
+}
+
 .header-right a {
   float: right;
   color: white;
@@ -82,7 +86,7 @@ body {
 .panel-4 {
   text-align: left;
   font-size: 2.5rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("/img/MixBio-Video.gif");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("/img/mix-bio.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -133,14 +137,15 @@ body {
 
 .button {
   margin-top: 1.5rem;
-  padding: .5rem .75rem .5rem .75rem;
+  padding: .6rem .75rem .6rem .75rem;
   background-color: #fff;
   color: #0f3ffb;
   border: 0;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 200;
   font-family: "geogrotesque_regularregular";
+  cursor: pointer;
 }
 
 .bold {
@@ -187,6 +192,10 @@ body {
   align-items: center;
 }
 
+.social-media a {
+  cursor: pointer;
+}
+
 .footer-logo {
   height: 3rem;
 }
@@ -203,8 +212,7 @@ body {
   background-color: #0f3ffb;
 }
 
-.customers {
-  height: 25vh;
+.customers, .featured-publications, #featured-in {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -216,7 +224,12 @@ body {
   align-items: center;
 }
 
-.customers img {
+.customers, .featured-publications {
+  height: 25vh;
+}
+
+
+.customers img, .featured-publications img {
   height: 2.5rem;
   text-align: center;
   margin: 3rem;
@@ -227,9 +240,7 @@ a img {
 }
 
 hr {
-  /*float: middle;*/
   width: 85vw;
-  /*text-align: center;*/
   margin: 0;
 }
 
@@ -272,11 +283,13 @@ hr {
   margin-left: 1rem;
   font-size: 1.6rem;
   font-weight: 600;
+  cursor: pointer;
 }
 
 #logo {
   vertical-align: middle;
   width: 3.2rem;
+  cursor: pointer;
 }
 
 #ot-vid {
@@ -297,9 +310,11 @@ hr {
 
 .contact {
   font-size: 1.5rem;
-  height: 90vh;
+  height: 85vh;
   justify-content: flex-start;
   width: 100vw;
+  margin-left: 6vw;
+  margin-top: 4vw;
 }
 
 #form-contact {
@@ -354,27 +369,53 @@ hr {
 
 .submit {
   float: right;
-  margin-right: 10.5vw;
   background-color: #00F;
   color: white;
-  margin-top: 15px;
 }
 
 .email-signup {
   width: 15vw;
-  align-self: flex-end;
-}
-
-.validate {
-  width: 8vw;
-}
-
-#mc_embed_signup {
-  position: absolute;;
-  top: 0;
-  left: 60vw;
-}
-
-.form-fields {
   position: relative;
+  display: inline-block;
+}
+
+.email-signup input[type="email"] {
+  width: 12rem;
+}
+
+.form-contact2 {
+  float: right;
+  padding: 1.2rem;
+}
+
+.email-submit {
+  position: absolute;
+  float: left;
+  margin-left: 1rem;
+}
+
+.email-field input[type="email"] {
+  display: inline-block;
+  margin-bottom: 100px;
+  width: 12rem;
+}
+
+.email-field input[type="submit"] {
+  margin-top: 0;
+}
+
+.msg-prompt {
+  text-align: left;
+}
+
+form p {
+  padding-left: 2.5rem;
+}
+
+.response {
+  max-width: 25vw;
+}
+
+.hide {
+  display: none!important;
 }
