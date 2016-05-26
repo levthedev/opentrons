@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="The OT-One is the worlds first personal liquid handling robot. It starts at $3,000 and runs protocols from your web browser." />
+    <meta name="keywords" content="pipette, protocol, liquid handling robot, liquid handling, microliter, serial dilution, ELISA assay, PCR, Master Mix, PCR prep, Gibson assembly, lab automation, PC, tecan, hamilton, transformation, heat shock transformation, e. coli transformation, personal, easy to program, cooler, heater, custom robot, raspberry pi, igem, synbiobeta, kickstarter, dna synthesis, diybio">
     <title>OpenTrons</title>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
@@ -25,7 +27,7 @@
 
     <div class="panel panel-1">
       <video autoplay loop id="ot-vid">
-        
+
       </video>
 
       <div class="main-title">
@@ -102,8 +104,127 @@
       <img src="./img/logo_genspace.png">
     </div>
 
-    <div id="map"></div>
+    <div class="panel" id="map"></div>
     <script src="./javascripts/leaflet-mapbox-gl.js"></script>
+    <script>
+      var map = L.map('map', {
+          zoomControl: false
+      }).setView([25.84706035607122, -0], 2.5);
+
+      map._layersMaxZoom = 8;
+      map._layersMinZoom = 2.5;
+
+      map.doubleClickZoom.enable();
+      map.scrollWheelZoom.disable();
+
+      new L.Control.Zoom({
+          position: 'topright'
+      }).addTo(map);
+
+      var gl = L.mapboxGL({
+          accessToken: 'pk.eyJ1Ijoia3Q4MCIsImEiOiI4NG5ZZ1BZIn0.YfJqwZ4R_B_8vnaWbIiXmg',
+          style: 'mapbox://styles/kt80/ciju7tcqa00bz90lxjxfflym1'
+      }).addTo(map);
+
+      var cLayer = new L.layerGroup().addTo(map);
+
+      var tronIcon = L.icon({
+          iconUrl: './img/ot-marker.svg',
+          iconSize: [30, 30], // size of the icon
+          iconAnchor: [15, 15], // point of the icon which will correspond to marker's location
+          popupAnchor: [15, 15] // point from which the popup should open relative to the iconAnchor
+      });
+
+      var array = [];
+
+      $.getJSON('./javascripts/CustomerLocations3-4.json', function(data) {
+          var sightings = data.features;
+          for (var i = 0; i < sightings.length; i++) {
+              var lat, lon;
+              lon = sightings[i].geometry.coordinates[0];
+              lat = sightings[i].geometry.coordinates[1];
+              var ltln = [lat, lon];
+
+              var marker = new L.marker(ltln, {
+                  icon: tronIcon
+              }).addTo(cLayer);
+
+              marker.on('click', function(e) {
+                  var z = map.getZoom();
+                  map.setView(e.latlng, z + 1);
+              });
+              array.push(marker);
+          }
+      });
+      function cycle(markers) {
+          var i = 0;
+
+          function run() {
+              if (++i > array.length - 1) i = 0; //shorthand if statement
+              map.setView(markers[i].getLatLng(), 3);
+              window.setTimeout(run, 1000);
+          }
+          run();
+      }
+    </script>
+
+    <div class="contact panel">
+      <form id="form-contact" class="form" action="process.php">
+        <h3 class="light">People around the world love OpenTrons</h3>
+        <p class="msg-prompt light">Get in touch to learn how the OT-One can help your lab.</p>
+        <!-- <p class="msg-success hide">Thanks for your message! We'll be in touch with a response as soon as we possibly can.</p> -->
+        <div class="form-fields">
+          <div id="name">
+            <input type="text" name="name" placeholder="name" />
+          </div>
+          <div id="email">
+            <input type="text" name="email" placeholder="email address" />
+          </div>
+          <textarea style="height:100px;" id="message" name="message" placeholder="message"></textarea>
+          <div>
+            <input type="submit" value="submit" class="button submit" style="background-color:#00F; color:white; margin-top:15px;" />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="email-signup">
+      <h3 class="light">Stay Updated</h4>
+      <p class="msg-prompt"> Join our mailing list.</p>
+      <div id="mc_embed_signup">
+        <form action="//opentrons.us8.list-manage.com/subscribe/post?u=000595683fb96c5fb3c54cf53&amp;id=ba66060a9c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+            <div class="mc-field-group">
+              <input type="email" value="" name="EMAIL" class="required email inbl mr1 up-1" id="mce-EMAIL" placeholder="email address">
+              <input type="submit" value="submit" name="subscribe" id="mc-embedded-subscribe" class="button button-blue bold">
+            </div>
+
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>
+
+            <div style="position: absolute; left: -5000px;">
+              <input type="text" name="b_000595683fb96c5fb3c54cf53_ba66060a9c" tabindex="-1" value="">
+            </div>
+          </div>
+        </form>
+      </div>
+      <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+      <script type='text/javascript'>
+      (function($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0] = 'EMAIL';
+        ftypes[0] = 'email';
+        fnames[1] = 'FNAME';
+        ftypes[1] = 'text';
+        fnames[2] = 'LNAME';
+        ftypes[2] = 'text';
+      }(jQuery));
+      var $mcj = jQuery.noConflict(true);
+      </script>
+    </div>
 
     <div class="social-media">
       <a class="image-link" href="https://twitter.com/OpenTrons_">
@@ -112,9 +233,106 @@
       <a class="image-link" href="https://www.facebook.com/OpenTrons-Labworks-1679440585634319/">
         <img class="footer-logo" src="./img/facebook.png">
       </a>
-      <a class="button bottom-margin" href="https://mix.bio">
+      <a class="button bottom-button" href="https://mix.bio">
         mix.bio
       </a>
     </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script>
+      window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+      </script>
+      <script src="./javascripts/event_tracker.js"></script>
+      <!-- GOOGLE ANALYTICS -->
+      <script>
+      (function(i, s, o, g, r, a, m) {
+          i['GoogleAnalyticsObject'] = r;
+          i[r] = i[r] || function() {
+              (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+          a = s.createElement(o),
+              m = s.getElementsByTagName(o)[0];
+          a.async = 1;
+          a.src = g;
+          m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+      ga('create', 'UA-72901304-1', 'auto');
+      ga('send', 'pageview');
+      </script>
+      <!-- INTERCOM TRACKING -->
+      <script>
+      window.intercomSettings = {
+          app_id: "ukpodv2l"
+      };
+      </script>
+      <script>
+      (function() {
+          var w = window;
+          var ic = w.Intercom;
+          if (typeof ic === "function") {
+              ic('reattach_activator');
+              ic('update', intercomSettings);
+          } else {
+              var d = document;
+              var i = function() {
+                  i.c(arguments)
+              };
+              i.q = [];
+              i.c = function(args) {
+                  i.q.push(args)
+              };
+              w.Intercom = i;
+
+              function l() {
+                  var s = d.createElement('script');
+                  s.type = 'text/javascript';
+                  s.async = true;
+                  s.src = 'https://widget.intercom.io/widget/ukpodv2l';
+                  var x = d.getElementsByTagName('script')[0];
+                  x.parentNode.insertBefore(s, x);
+              }
+              if (w.attachEvent) {
+                  w.attachEvent('onload', l);
+              } else {
+                  w.addEventListener('load', l, false);
+              }
+          }
+      })()
+      </script>
+
+  <!-- Google Adwords -->
+  <script type="text/javascript">
+  /* <![CDATA[ */
+  var google_conversion_id = 933640901;
+  var google_custom_params = window.google_tag_params;
+  var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+  </script>
+  <noscript>
+    <div style="display:inline;">
+      <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/933640901/?value=0&amp;guid=ON&amp;script=0" />
+    </div>
+  </noscript>
+  <!-- Google Code for Info Email Conversion Page -->
+  <script type="text/javascript">
+  /* <![CDATA[ */
+  var google_conversion_id = 933640901;
+  var google_conversion_language = "en";
+  var google_conversion_format = "3";
+  var google_conversion_color = "ffffff";
+  var google_conversion_label = "oCzRCIvm6WMQxfWYvQM";
+  var google_remarketing_only = false;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+  </script>
+  <noscript>
+    <div style="display:inline;">
+      <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/933640901/?label=oCzRCIvm6WMQxfWYvQM&amp;guid=ON&amp;script=0" />
+    </div>
+  </noscript>
   </body>
 </html>

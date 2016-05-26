@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+<g opacity="0.8">
+	<defs>
+		<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="3" y="3" width="24" height="24">
+			<feFlood  style="flood-color:white;flood-opacity:1" result="back"/>
+			<feBlend  in="SourceGraphic" in2="back" mode="normal"/>
+		</filter>
+	</defs>
+	<mask maskUnits="userSpaceOnUse" x="3" y="3" width="24" height="24" id="SVGID_1_">
+		<g filter="url(#Adobe_OpacityMaskFilter)">
+			<image overflow="visible" width="117" height="117" xlink:href="547C6161F47BDB95.jpg"  transform="matrix(0.24 0 0 0.24 1 1)">
+			</image>
+		</g>
+	</mask>
+	<g mask="url(#SVGID_1_)">
+		<circle fill="#FFFFFF" cx="15" cy="15" r="12"/>
+	</g>
+</g>
+<g>
+	<defs>
+		<filter id="Adobe_OpacityMaskFilter_1_" filterUnits="userSpaceOnUse" x="5" y="5" width="20" height="20">
+			<feFlood  style="flood-color:white;flood-opacity:1" result="back"/>
+			<feBlend  in="SourceGraphic" in2="back" mode="normal"/>
+		</filter>
+	</defs>
+	<mask maskUnits="userSpaceOnUse" x="5" y="5" width="20" height="20" id="SVGID_2_">
+		<g filter="url(#Adobe_OpacityMaskFilter_1_)">
+			<image overflow="visible" width="100" height="100" xlink:href="547C6161F47BDB93.jpg"  transform="matrix(0.24 0 0 0.24 3 3)">
+			</image>
+		</g>
+	</mask>
+	<g mask="url(#SVGID_2_)">
+		<circle fill="#FFFFFF" cx="15" cy="15" r="10"/>
+	</g>
+</g>
+<g>
+	<path fill="#0000FF" d="M17.825,16.582c-0.018-1.838-1.909-2.898-2.635-5.005C15.075,11.13,15,10.856,15,10.856
+		c0,0,0,0.001,0,0.001s0,0,0-0.001c0,0-0.075,0.273-0.19,0.721c-0.725,2.107-2.618,3.167-2.635,5.005
+		c-0.011,1.138,0.668,2.116,1.642,2.563c0.003,0.002,0.005,0.005,0.007,0.006c0.009,0.005,0.019,0.008,0.027,0.011
+		c0.058,0.026,0.117,0.049,0.178,0.07c0.032,0.013,0.063,0.024,0.096,0.035c0.059,0.019,0.118,0.034,0.178,0.05
+		c0.035,0.009,0.07,0.02,0.106,0.027c0.062,0.013,0.127,0.021,0.191,0.031c0.033,0.004,0.066,0.012,0.101,0.015
+		c0.096,0.011,0.193,0.017,0.293,0.017c0.002,0,0.004,0,0.006,0h0h0c0.002,0,0.004,0,0.006,0c0.099,0,0.197-0.006,0.293-0.017
+		c0.034-0.003,0.067-0.011,0.101-0.015c0.064-0.01,0.129-0.019,0.191-0.031c0.036-0.008,0.071-0.019,0.106-0.027
+		c0.06-0.016,0.119-0.031,0.177-0.05c0.033-0.011,0.064-0.022,0.096-0.035c0.06-0.021,0.12-0.044,0.178-0.07
+		c0.008-0.003,0.018-0.006,0.026-0.011c0.003-0.001,0.005-0.004,0.008-0.006C17.156,18.698,17.836,17.72,17.825,16.582"/>
+	<path d="M15,24.921c-5.514,0-10-4.486-10-10c0-4.867,3.48-9.006,8.275-9.842l0.537,3.079c-3.295,0.574-5.687,3.419-5.687,6.764
+		c0,3.791,3.084,6.875,6.875,6.875c3.79,0,6.875-3.084,6.875-6.875c0-3.344-2.392-6.189-5.687-6.764l0.537-3.079
+		C21.52,5.915,25,10.054,25,14.921C25,20.435,20.514,24.921,15,24.921"/>
+</g>
+</svg>

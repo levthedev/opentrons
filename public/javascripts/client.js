@@ -14,63 +14,33 @@ $(document).ready(function() {
     otVid.play();
   }
 
-  var map = L.map('map', {
-    zoomControl: false
-  }).setView([25.84706035607122, -0], 2.5);
+  $('#form-contact').on('submit', function (e) {
+    e.preventDefault();
+    var $form   = $(this)
+      , $button = $form.find('input[type="submit"]')
+      , old_val = $button.val()
+      , data    = $form.serialize();
 
-  map._layersMaxZoom = 8;
-  map._layersMinZoom = 2.5;
-
-  map.doubleClickZoom.enable();
-  map.scrollWheelZoom.disable();
-
-  new L.Control.Zoom({
-    position: 'topright'
-  }).addTo(map);
-
-  var gl = L.mapboxGL({
-    accessToken: 'pk.eyJ1Ijoia3Q4MCIsImEiOiI4NG5ZZ1BZIn0.YfJqwZ4R_B_8vnaWbIiXmg',
-    style: 'mapbox://styles/kt80/ciju7tcqa00bz90lxjxfflym1'
-  }).addTo(map);
-
-  var cLayer = new L.layerGroup().addTo(map);
-
-  var tronIcon = L.icon({
-    iconUrl: 'img/ot-marker.svg',
-    iconSize: [30, 30],
-    iconAnchor: [15, 15],
-    popupAnchor: [15, 15]
-  });
-
-  var array = [];
-
-  $.getJSON('./javascripts/CustomerLocations3-4.json', function(data) {
-    var sightings = data.features;
-    for (var i = 0; i < sightings.length; i++) {
-      var lat, lon;
-
-      lon = sightings[i].geometry.coordinates[0];
-      lat = sightings[i].geometry.coordinates[1];
-
-      var ltln = [lat, lon];
-      var marker = new L.marker(ltln, {
-        icon: tronIcon
-      }).addTo(cLayer);
-      marker.on('click', function(e) {
-        var z = map.getZoom();
-        map.setView(e.latlng, z + 1);
+    $button.val('submitting...');
+    $button.prop("disabled",true);
+    setTimeout(function () {
+      $.ajax({
+        url: './process.php',
+        type: "GET",
+        data: data,
+        cache: false,
+        success: function () {
+          $button.val(old_val);
+          $button.prop("disabled",false);
+          $('.msg-prompt').hide();
+          $('.msg-success').removeClass('hide');
+          $('.form-fields').hide();
+        },
+        error: function () {
+          $button.val(old_val);
+          $button.prop("disabled",false);
+        }
       });
-      array.push(marker);
-    }
+    }, 2000);
   });
-  function cycle(markers) {
-    var i = 0;
-
-    function run() {
-      if (++i > array.length - 1) i = 0;
-      map.setView(markers[i].getLatLng(), 3);
-      window.setTimeout(run, 1000);
-    }
-    run();
-  }
 });

@@ -12,6 +12,7 @@ body {
   top: 0px;
   margin: 2rem;
   font-size: 1.5rem;
+  z-index: 100;
 }
 
 .header-right a {
@@ -168,10 +169,16 @@ body {
 .social-media {
   position: fixed;
   bottom: 0;
-  left: 0;
   z-index: 3;
-  padding: 1.5rem;
+  padding-left: 1.7rem;
   font-size: 3.2rem;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
 }
 
 .footer-logo {
@@ -180,21 +187,27 @@ body {
 
 .image-link {
   text-decoration: none;
+  margin-right: 1rem;
 }
 
-.bottom-margin {
-  margin-top: 0rem;
-  margin-bottom: 1rem;
+.bottom-button {
+  margin-bottom: 2.1rem;
+  vertical-align: middle;
+  color: #fff;
+  background-color: #0f3ffb;
 }
 
 .customers {
-  height: 15vh;
+  height: 25vh;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
 }
 
 .customers img {
@@ -274,4 +287,75 @@ hr {
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   background-size: cover;
+}
+
+.contact {
+  font-size: 1.5rem;
+  height: 90vh;
+  justify-content: flex-start;
+  margin-left: 5vw;
+}
+
+form {
+  width: 66vw;
+  font-family: font-family: 'geogrotesque_regularregular', Helvetica;
+  border: 0;
+  outline: 0;
+  padding: 1.2rem;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+#message {
+  background: #fff;
+  border: 0;
+  color: #000;
+  font-family: 'geogrotesque_ultralighultraLt';
+  font-size: 1.25rem;
+  outline: 0;
+}
+
+.form input[type="text"],
+.form input[type="email"] {
+  padding: 1vw;
+  display: inline;
+  width: 25vw;
+}
+
+.light {
+  font-family: 'geogrotesque_ultralighultraLt' Times;
+  font-weight: 600;
+  margin-left: 10vw;
+}
+
+#name {
+  float: left;
+  margin-right: 1.5vw;
+}
+
+#message {
+  padding: 1vw;
+  width: 53.5vw;
+  margin-top: 1rem;
+}
+
+.msg-prompt {
+  font-size: 1rem;
+  text-align: center;
+  width: 40vw;
+  margin-left: 8vw;
+}
+
+.submit {
+  float: right;
+  margin-right: 10.5vw;
+}
+
+.email-signup {
+  float: right;
+  width: 33vw;
+}
+
+.validate {
+  width: 8vw;
 }
