@@ -1,5 +1,7 @@
 body {
   margin: 0px;
+  width: 100%;
+  overflow-x: hidden;
   background: #000;
   color: white;
   font-family: 'geogrotesque_ultralighultraLt';
@@ -7,7 +9,7 @@ body {
 }
 
 .header-cont {
-  width: 97%;
+  width: 90vw;
   position: fixed;
   top: 0px;
   margin: 2rem;
@@ -23,6 +25,10 @@ body {
   font-size: 1.2rem;
   font-weight: 600;
   text-decoration: none;
+}
+
+#blog {
+  margin-right: -2vw;
 }
 
 .panel {
@@ -293,11 +299,11 @@ hr {
   font-size: 1.5rem;
   height: 90vh;
   justify-content: flex-start;
-  margin-left: 5vw;
+  width: 100vw;
 }
 
-form {
-  width: 66vw;
+#form-contact {
+  float: left;
   font-family: font-family: 'geogrotesque_regularregular', Helvetica;
   border: 0;
   outline: 0;
@@ -349,13 +355,26 @@ form {
 .submit {
   float: right;
   margin-right: 10.5vw;
+  background-color: #00F;
+  color: white;
+  margin-top: 15px;
 }
 
 .email-signup {
-  float: right;
-  width: 33vw;
+  width: 15vw;
+  align-self: flex-end;
 }
 
 .validate {
   width: 8vw;
+}
+
+#mc_embed_signup {
+  position: absolute;;
+  top: 0;
+  left: 60vw;
+}
+
+.form-fields {
+  position: relative;
 }
